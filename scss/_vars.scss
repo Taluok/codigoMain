@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 $tipografiaGeneral: 'Roboto', sans-serif;
 $tipografiaAlternativa: 'Signika', sans-serif;
 
@@ -55,66 +54,4 @@ $estilos: (
     centro: center,
     tamanioFuente:25px,
     1rem: 1rem
-=======
-$tipografiaGeneral: 'Roboto', sans-serif;
-$tipografiaAlternativa: 'Signika', sans-serif;
-
-$ancho:100%;
-
-$espaciadoEstandar: 10px;
-$espaciadoDoble: 20px;
-
-$fuenteNormal: 1rem;
-$fuenteGrande:2rem;
-$fuentePequeña:0.5rem;
-$fuenteLinks: 1.5rem;
-
-
-$colorPrincipal: #020202;
-$colorSecundario: #0D0D0E;
-$colorTexto: white;
-$colorLinks: #E1BA39;
-
-/*maps*/
-$bordes: (
-    borde-solid-principal: 1px solid black,
-    borde-solid-dospx: 2px solid black,
-    borde-solid-trespx: 3px solid black
-);
-
-$map-flex:(
-    flex:flex,
-    row: row,
-    column: column,
-    space-between: space-between,
-    space-around: space-around,
-    space-evenly: space-evenly,
-    space-center:center,
-    aling-item:center,
-    text-align: center
-    justify-conten:center,
-);
-
-$fuentes:(
-    thin:100,
-    light:300,
-    regular:400,
-    medium:500,
-    bold:700,
-    black:900
-);
-
-$sizes:(
-    5:5px,
-    10:10px,
-    14:14px,
-    16:16px,
-    20:10px
-);
-
-$estilos: (
-    centro: center,
-    tamanioFuente:25px,
-    1rem: 1rem
->>>>>>> 5669405ef2820b9bbd37df0e8775decbcc7b0ea1
 )

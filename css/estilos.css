@@ -1,9 +1,10 @@
 /* Error: expected "{".
- *   ,
- * 2 | @import"_vars.scss";
- *   |                    ^
- *   '
- *   scss\base.scss 2:20  root stylesheet */
+ *    ,
+ * 15 | >>>>>>> 5669405ef2820b9bbd37df0e8775decbcc7b0ea1
+ *    |                                                 ^
+ *    '
+ *   scss\_reset.scss 15:49  @import
+ *   scss\base.scss 3:8      root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a   \2577 \a 2 \2502  @import"_vars.scss";\a   \2502                     ^\a   \2575 \a   scss\\base.scss 2:20  root stylesheet';
+  content: 'Error: expected "{".\a    \2577 \a 15 \2502  >>>>>>> 5669405ef2820b9bbd37df0e8775decbcc7b0ea1\a    \2502                                                  ^\a    \2575 \a   scss\\_reset.scss 15:49  @import\a   scss\\base.scss 3:8      root stylesheet';
 }

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*scss main index*/
 .beneficios {
     margin-bottom: 1rem;
@@ -34,22 +33,3 @@
         height: 90vh;
     }
 }
-=======
-main{
-    .beneficios{
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-        .box1{
-            @include flexbox (map-get($map-flex,column),map-get($map-flex,aling-item),map-get($map-flex,justify-conten) 1rem,#0D0D0E);
-        }
-        .fondo{
-            background-image: url(../assets/img/imgindex.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            height: 90vh;
-        }
-    }
-}
-    
->>>>>>> 5669405ef2820b9bbd37df0e8775decbcc7b0ea1
