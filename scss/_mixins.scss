@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @mixin mixinWidth{
     width: 100%;
 }
@@ -19,4 +20,27 @@
     flex-direction: $direction;
     background-color: $colorSecundario;
     font-size: $fuenteNormal;
+=======
+@mixin mixinWidth{
+    width: 100%;
+}
+@mixin flex-rox-center{
+    display:$flex;
+    flex-direction:row;
+    justify-content:center;
+}
+@mixin flex-column-center{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+@mixin flexbox($justify,$aling,$direction,$background,$fontSize){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $aling;
+    flex-direction: $direction;
+    background-color: $colorSecundario;
+    font-size: $fuenteNormal;
+>>>>>>> 5669405ef2820b9bbd37df0e8775decbcc7b0ea1
 }

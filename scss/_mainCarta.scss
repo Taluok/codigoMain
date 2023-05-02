@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*scss main de pag Carta*/
 .box1Carta{
     background-color: #0D0D0E;
@@ -49,3 +50,34 @@
     background-image: url(../assets/img/plato4menu.jpeg);
 }
 /*Media queries pag Carta*/
+=======
+main{
+    .box1Carta{
+        background-color: #0D0D0E;
+        font-size: 1.5rem;
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+    }
+    .fondo1{
+        background-image: url(../assets/img/plato1menu.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 90vh;
+    }
+    .fondo2{
+        @extend .fondo1;
+        background-image: url(../assets/img/plato2a.webp);
+    }
+    .fondo3{
+        @extend .fondo1;
+        background-image: url(../assets/img/plato3menu.webp);
+    }
+    .fondo4{
+        @extend .fondo1;
+        background-image: url(../assets/img/plato4menu.jpeg);
+    }
+}
+>>>>>>> 5669405ef2820b9bbd37df0e8775decbcc7b0ea1
