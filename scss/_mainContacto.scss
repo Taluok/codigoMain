@@ -1,0 +1,203 @@
+/*scss main pag contacto*/
+.beneficios{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    .boxContacto{
+        h1{
+            font-family: 'Signika', sans-serif;
+            color: #E1BA39;
+            font-size: 2rem;
+            text-align: center;
+            padding-top: 20px;
+            h2{
+                font-family: 'Signika', sans-serif;
+                color: #E1BA39;
+                font-size: 1.5rem;
+                text-align: center;
+                p{
+                    font-family: 'Roboto', sans-serif;
+                    color:white;
+                    margin-bottom: 1rem;
+                    font-weight: 80;
+                    font-size: 1rem;
+                    line-height: 1.5;
+                    text-align: center;
+                }
+            }
+        }
+    background-color: #0D0D0E;
+        font-size: 1.2rem;
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+    }
+    .tituloFormulario{
+        margin-top: 1.5rem;
+        text-align: center;
+        color: #E1BA39;
+
+    }
+    .row{
+        .formularioBox {
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            form{
+                position: relative;
+                display: inline-block;
+                padding: 5px 15px;
+                color: #fad05c;
+                font-size: 16px;
+                text-decoration: none;
+                text-transform: uppercase;
+                overflow: hidden;
+                transition: 5s;
+                margin-top: 0.5px;
+                margin-bottom: 2rem;
+                letter-spacing: 4px;
+            } 
+            .userBox input{
+                width: 100%;
+                padding: 10px 0;
+                font-size: 16px;
+                color: #fff;
+                margin-bottom: 5px;
+                border: none;
+                border-bottom: 1px solid #fff;
+                outline: none;
+                background: transparent;
+            }
+            textarea{
+                width: 100%;
+                padding: 10px 0;
+                font-size: 14px;
+                color: #fff;
+                border: none;
+                border-bottom: 1px solid #fff;
+                outline: none;
+                background: transparent;
+            }
+            .userBox label{
+                position: absolute;
+                top: 0;
+                padding: 10px 0;
+                font-size: 16px;
+                color: #fff;
+                pointer-events: none;
+                transition: 5s;
+            } 
+        }
+    }
+}
+/*Media queries de mainContactos*/
+@media only screen and (min-width: 576px) {
+    main{
+        .boxContacto{
+            h1{
+                font-family: 'Signika', sans-serif;
+                color: #E1BA39;
+                font-size: 1.5rem;
+                text-align: center;
+                padding-top: 15px;
+                h2{
+                    font-family: 'Signika', sans-serif;
+                    color: #E1BA39;
+                    font-size: 1rem;
+                    text-align: center;
+                    p{
+                        font-family: 'Roboto', sans-serif;
+                        color:white;
+                        margin-bottom: 1rem;
+                        font-weight: 80;
+                        font-size: 0.5rem;
+                        line-height: 1.5;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .row {
+            .formularioBox {
+            form {
+                max-width: 80%;
+            }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 768px) {
+    main{
+        .boxContacto{
+            h1{
+                font-family: 'Signika', sans-serif;
+                color: #E1BA39;
+                font-size: 1.8rem;
+                text-align: center;
+                padding-top: 15px;
+                h2{
+                    font-family: 'Signika', sans-serif;
+                    color: #E1BA39;
+                    font-size: 1rem;
+                    text-align: center;
+                    p{
+                        font-family: 'Roboto', sans-serif;
+                        color:white;
+                        margin-bottom: 1rem;
+                        font-weight: 80;
+                        font-size: 0.8rem;
+                        line-height: 1.5;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .row {
+            .formularioBox {
+            form {
+                max-width: 60%;
+            }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 992px) {
+    main{
+        .boxContacto{
+            h1{
+                font-family: 'Signika', sans-serif;
+                color: #E1BA39;
+                font-size: 0.5rem;
+                text-align: center;
+                padding-top: 15px;
+                h2{
+                    font-family: 'Signika', sans-serif;
+                    color: #E1BA39;
+                    font-size: 1rem;
+                    text-align: center;
+                    p{
+                        font-family: 'Roboto', sans-serif;
+                        color:white;
+                        margin-bottom: 1rem;
+                        font-weight: 80;
+                        font-size: 0.5rem;
+                        line-height: 1.5;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .row {
+            .formularioBox {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            form {
+                max-width: 45%;
+            }
+            }
+        }
+    }
+}

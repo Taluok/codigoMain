@@ -1,0 +1,35 @@
+/*scss main index*/
+.beneficios {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+
+    .box1 {
+        @include flexbox(map-get($map-flex, column), map-get($map-flex, aling-item), map-get($map-flex, justify-content), $colorSecundario, $fuenteNormal);
+
+        h1 {
+            font-family: 'Signika', sans-serif;
+            color: #E1BA39;
+            font-size: 2rem;
+            text-align: center;
+            margin-top: 0; /* Agregamos margin-top: 0; para eliminar el margen superior */
+        }
+
+        p {
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            margin-bottom: 1rem;
+            font-weight: 80;
+            font-size: inherit;
+            line-height: 1.5;
+            text-align: center;
+        }
+    }
+
+    .fondo {
+        background-image: url(../assets/img/imgindex.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 90vh;
+    }
+}
