@@ -25,7 +25,7 @@
                 }
             }
         }
-    background-color: #0D0D0E;
+        background-color: #0D0D0E;
         font-size: 1.2rem;
         display:flex;
         flex-direction:column;
@@ -93,26 +93,26 @@
     }
 }
 /*Media queries de mainContactos*/
-@media only screen and (min-width: 576px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     main{
         .boxContacto{
             h1{
                 font-family: 'Signika', sans-serif;
                 color: #E1BA39;
-                font-size: 1.5rem;
+                font-size: 2rem;
                 text-align: center;
                 padding-top: 15px;
                 h2{
                     font-family: 'Signika', sans-serif;
                     color: #E1BA39;
-                    font-size: 1rem;
+                    font-size: 1.5rem;
                     text-align: center;
                     p{
                         font-family: 'Roboto', sans-serif;
                         color:white;
                         margin-bottom: 1rem;
                         font-weight: 80;
-                        font-size: 0.5rem;
+                        font-size: 1rem;
                         line-height: 1.5;
                         text-align: center;
                     }
@@ -128,7 +128,7 @@
         }
     }
 }
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 576px) and (max-width: 768px) {
     main{
         .boxContacto{
             h1{
@@ -140,7 +140,7 @@
                 h2{
                     font-family: 'Signika', sans-serif;
                     color: #E1BA39;
-                    font-size: 1rem;
+                    font-size: 1.3rem;
                     text-align: center;
                     p{
                         font-family: 'Roboto', sans-serif;
@@ -163,13 +163,13 @@
         }
     }
 }
-@media only screen and (min-width: 992px) {
+@media screen and (min-width: 361px) and (max-width: 414px) {
     main{
         .boxContacto{
             h1{
                 font-family: 'Signika', sans-serif;
                 color: #E1BA39;
-                font-size: 0.5rem;
+                font-size: 1.5px;
                 text-align: center;
                 padding-top: 15px;
                 h2{

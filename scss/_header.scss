@@ -1,0 +1,418 @@
+/*Scss header de las 5 paginas*/
+.header{
+        height: 100vh;
+        background: linear-gradient(to right, rgb(0,0,0), #161618);
+    .contenedorLogo{
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo{
+            width: 200px;
+            object-fit: cover;
+            display:inline-block;
+            padding-left: 1rem;
+        }
+    }
+    .boton {
+        background-color:#fad05cb6;
+    }
+    a.active, a:hover{
+        background:#E1BA39;
+        transition: .5s;
+        border-radius: 17px;
+    }
+    .contenedorIndex{
+        background:linear-gradient(to right, #0000009c,#0000009c ),url("../assets/img/cabnavmenu.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 85%;
+        width: 100%;
+        display:flex;
+        justify-content: flex-end;
+        align-items:center;
+        .hijoIndex{
+            padding-right: 5rem;
+            padding-left: 5rem;
+            .textoIndex{
+                font-family: 'Signika', sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 25px;
+                text-align: center;
+                .animate__animated.animate__bounce {
+                    --animate-duration: 2s;
+                    :root {
+                        --animate-duration: 800ms;
+                        --animate-delay: 0.9s;
+                    }
+                }
+            }
+        }
+    }  
+    .contenedorBeneficios{
+        background:linear-gradient(to right, #0000009c,#0000009c ),url("../assets/img/canavbeneficios.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 85%;
+        width: 100%;
+        display:flex;
+        justify-content: flex-end;
+        align-items:center;
+        .hijoBeneficios{
+            padding-right: 13rem;
+            padding-left: 5rem;
+            .textoBeneficios{
+                font-family: 'Signika', sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 25px;
+                text-align: center;
+                color: #fff;
+                text-shadow: 2px 2px 4px #000000;
+                .animate__animated.animate__bounce {
+                    --animate-duration: 2s;
+                    :root {
+                        --animate-duration: 800ms;
+                        --animate-delay: 0.9s;
+                    }
+                }
+            }
+        }
+    }    
+    .contenedorCarta{
+        background:linear-gradient(to right, #0000009c,#0000009c ),url("../assets/img/cabnavcarta.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 85%;
+        width: 100%;
+        display:flex;
+        justify-content: flex-end;
+        align-items:center;
+        .hijoCarta{
+            padding-right: 6rem;
+            padding-left: 5rem;
+            .textoCarta{
+                font-family: 'Signika', sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 25px;
+                text-align: center;
+                .animate__animated.animate__bounce {
+                    --animate-duration: 2s;
+                    :root {
+                        --animate-duration: 800ms;
+                        --animate-delay: 0.9s;
+                    }
+                }
+            }
+        }
+    }
+    .contenedorCena{
+        background:linear-gradient(to right, #0000009c,#0000009c ),url("../assets/img/cabnavCena.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 85%;
+        width: 100%;
+        display:flex;
+        justify-content: flex-end;
+        align-items:center;
+        .hijoCena{
+            padding-right: 20rem;
+            padding-left: 5rem;
+            .textoCena{
+                font-family: 'Signika', sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 25px;
+                text-align: center;
+            }
+        }
+    }
+    .contenedorContacto{
+        background:linear-gradient(to right, #0000009c,#0000009c ),url("../assets/img/pexels-photo-10295770.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 90%;
+        width: 100%;
+        display:flex;
+        justify-content: flex-end;
+        align-items:center;
+        .hijoContacto{
+            padding-right: 5rem;
+            padding-left: 5rem;
+            .textoContacto{
+                font-family: 'Signika', sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 25px;
+                text-align: center;
+                .animate__animated.animate__bounce {
+                    --animate-duration: 2s;
+                    :root {
+                        --animate-duration: 800ms;
+                        --animate-delay: 0.9s;
+                    }
+                }
+            }
+        }
+    }    
+    }
+
+/*media queries header */  
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .header {
+        .contenedorIndex {
+            .hijoIndex {
+                padding-right: 2rem;
+                padding-left: 2rem;
+                .textoIndex {
+                font-size: 25px;
+                }
+            }
+        }
+        .contenedorBeneficios {
+            .hijoBeneficios {
+                padding-right: 2rem;
+                padding-left: 2rem;
+                .textoBeneficios {
+                font-size: 25px;
+                }
+            }
+        }
+    }
+    .contenedorCarta {
+        .hijoCarta {
+            padding-right: 2rem;
+            padding-left: 2rem;
+            .textoCarta {
+            font-size: 25px;
+            }
+        }
+        .contenedorCena {
+            .hijoCena {
+                padding-right: 2rem;
+                padding-left: 2rem;
+                .textoCena {
+                font-size: 25px;
+                }
+            }
+        }
+        .contenedorContacto {
+            .hijoContacto {
+                padding-right: 2rem;
+                padding-left: 2rem;
+                .textoContacto {
+                font-size: 25px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .header {
+        .contenedorIndex{
+            .hijoIndex {
+                padding-right: 1rem;
+                padding-left: 1rem;
+            .textoIndex {
+                font-size: 23px;
+            }
+            }
+        }
+        .contenedorBeneficios {
+            .hijoBeneficios {
+                padding-right: 2rem;
+                padding-left: 2rem;
+                .textoBeneficios {
+                font-size: 23px;
+                }
+            }
+        }
+        .contenedorCarta {
+            .hijoCarta {
+                padding-right: 2rem;
+                padding-left: 2rem;
+                .textoCarta {
+                font-size: 23px;
+                }
+            }
+        }
+        .contenedorCena {
+            .hijoCena {
+                padding-right: 2rem;
+                padding-left: 2rem;
+                .textoCena {
+                font-size: 23px;
+                }
+            }
+        }
+        .contenedorContacto {
+            .hijoContacto {
+                padding-right: 2rem;
+                padding-left: 2rem;
+                .textoContacto {
+                font-size: 23px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 414px) and (max-width: 576px) {
+    .header {
+        .contenedorIndex {
+            .hijoIndex {
+                padding-right: 0.5rem;
+                padding-left: 0.5rem;
+                .textoIndex {
+                    font-size: 21px;
+                }
+            }
+        }
+        .contenedorBeneficios {
+            .hijoBeneficios {
+                padding-right: 2rem;
+                padding-left: 2rem;
+                .textoBeneficios {
+                font-size: 21px;
+                }
+            }
+        }
+        .contenedorCarta {
+            .hijoCarta {
+                padding-right: 2rem;
+                padding-left: 2rem;
+                .textoCarta {
+                font-size: 21px;
+                }
+            }
+        }
+        .contenedorCena {
+            .hijoCena {
+                padding-right: 2rem;
+                padding-left: 2rem;
+                .textoCena {
+                font-size: 21px;
+                }
+            }
+        }
+        .contenedorContacto {
+            .hijoContacto {
+                padding-right: 2rem;
+                padding-left: 2rem;
+                .textoContacto {
+                font-size: 21px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 361px) and (max-width: 414px) {
+    .header {
+        .contenedorIndex{
+            .hijoIndex {
+                padding-right: 1rem;
+                padding-left: 1rem;
+            .textoIndex {
+                font-size: 19px;
+            }
+            }
+        }
+        .contenedorBeneficios {
+            .hijoBeneficios {
+                padding-right: 2rem;
+                padding-left: 2rem;
+                .textoBeneficios {
+                font-size: 19px;
+                }
+            }
+        }
+        .contenedorCarta {
+            .hijoCarta {
+                padding-right: 2rem;
+                padding-left: 2rem;
+                .textoCarta {
+                font-size: 19px;
+                }
+            }
+        }
+        .contenedorCena {
+            .hijoCena {
+                padding-right: 2rem;
+                padding-left: 2rem;
+                .textoCena {
+                font-size: 19px;
+                }
+            }
+        }
+        .contenedorContacto {
+            .hijoContacto {
+                padding-right: 2rem;
+                padding-left: 2rem;
+                .textoContacto {
+                font-size: 19px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 150px) and (max-width: 361px) {
+    .header {
+        .contenedorIndex {
+            .hijoIndex {
+                padding-right: 0.5rem;
+                padding-left: 0.5rem;
+                .textoIndex {
+                    font-size: 16px;
+                }
+            }
+        } 
+        .contenedorBeneficios {
+            .hijoBeneficios {
+                padding-right: 2rem;
+                padding-left: 2rem;
+                .textoBeneficios {
+                font-size: 16px;
+                }
+            }
+        }
+        .contenedorCarta {
+            .hijoCarta {
+                padding-right: 2rem;
+                padding-left: 2rem;
+                .textoCarta {
+                font-size: 16px;
+                }
+            }
+        }
+        .contenedorCena {
+            .hijoCena {
+                padding-right: 2rem;
+                padding-left: 2rem;
+                .textoCena {
+                font-size: 16px;
+                }
+            }
+        } 
+        .contenedorContacto {
+            .hijoContacto {
+                padding-right: 2rem;
+                padding-left: 2rem;
+                .textoContacto {
+                font-size: 16px;
+                }
+            }
+        }   
+    }
+}

@@ -1,8 +1,8 @@
 /*Inicio scss del Footer*/
 footer{
-    background-color: #020202;
+    background-color: $colorPrincipal;
     .contenedorFoother{
-        background-color: #060607;
+        background-color: $colorTerciario;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -11,23 +11,23 @@ footer{
         font-size: 1.5rem;
         justify-content: center; 
         .box2Foother{
-            background-color: #060607;
+            background-color: $colorTerciario;
             border: 1px solid black;
             width: 26.1rem;
             overflow: auto;
             margin: 1rem;
             text-align: center;
             h2{
-                font-family: 'Signika', sans-serif;
-                color: #E1BA39;
+                font-family: $tipografiaAlternativa;
+                color: $colorLinks;
                 font-size: 1.5rem;
                 text-align: center;
-                padding-bottom: 1.5rem;
-                padding-top: 1rem;
+                padding-bottom: 1.4rem;
+                padding-top: 1.4rem;
             }
             .parrafoFotter{
-                font-family: 'Roboto', sans-serif;
-                color:white;
+                font-family: $tipografiaGeneral;
+                color: $colorTexto;
                 margin-bottom: 1rem;
                 font-weight: 80;
                 font-size: inherit;
@@ -36,32 +36,32 @@ footer{
                 margin-top: 1rem;
             }
             h3{
-                font-family: 'Signika', sans-serif;
-                color: #E1BA39;
-                font-size: 1rem;
+                font-family: $tipografiaAlternativa;
+                color: $colorLinks;
+                font-size: $fuenteNormal;
                 text-align: center;
                 padding-bottom: 2.5rem;
-                padding-top: 3.5rem;
+                padding-top: 3.7rem;
             }
         }
         .box2Foother2{
-            background-color: #060607;
+            background-color: $colorTerciario;
             border: 1px solid black;
             width: 26.1rem;
             overflow: auto;
             margin: 1rem;
             text-align: center;
             h2{
-                font-family: 'Signika', sans-serif;
-                color: #E1BA39;
+                font-family: $colorTerciario;
+                color: $colorLinks;
                 font-size: 1.5rem;
                 text-align: center;
                 padding-bottom: 1rem;
-                padding-top: 1rem;
+                padding-top: 1.7rem;
             }
             .parrafoFotter2{
-                font-family: 'Roboto', sans-serif;
-                color:white;
+                font-family: $tipografiaGeneral;
+                color:$colorTexto;
                 margin-bottom: 0.5rem;
                 font-weight: 70;
                 font-size: inherit;
@@ -71,15 +71,17 @@ footer{
                 margin-bottom: 0.5rem;
             }
             .h3Foteer{
-                font-family: 'Signika', sans-serif;
-                color: #E1BA39;
+                font-family: $tipografiaAlternativa;
+                color: $colorLinks;
                 font-size: 1rem;
                 text-align: center;
+                margin-top: 1.6rem;
+                margin-bottom: 3.2rem;
             }
         }
         .box2Foother3{
             display: flex;
-            background-color: #060607;
+            background-color: $colorTerciario;
             border: 1px solid black;
             width: 26.1rem;
             overflow: auto;
@@ -94,15 +96,14 @@ footer{
             margin-bottom: 0.2rem;
             align-items: center;
             i {
-                color: #E1BA39;
+                color: $colorLinks;
                 font-size: 1.8rem;
                 margin: 0 0.5rem;
             }
         }   
     }
     .derechos{
-        font-family: "Roboto", sans-serif;
-        font-size: 0.7rem;
+        font-family: $tipografiaGeneral;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -113,7 +114,10 @@ footer{
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 100%;
+            width: $ancho;
+            .parrafoDerechos{
+                font-size: $fuenteNormal;
+            }
         }
     }
 }
@@ -121,7 +125,7 @@ footer{
 @media only screen and (max-width: 1320px){
     footer{
         .contenedorFoother{
-            padding-top: 2.5rem;
+            padding-top: 2rem;
             padding-left: 2.5rem;
             padding-right: 2.5rem;
         }
@@ -130,7 +134,7 @@ footer{
 @media only screen and (max-width: 1100px){
     footer{
         .contenedorFoother{
-            padding-top: 1.5rem;
+            padding-top: 1rem;
             padding-left: 1.5rem;
             padding-right: 1.5rem;
         }

@@ -1,18 +1,812 @@
-/* Error: expected "{".
- *    ,
- * 15 | >>>>>>> 5669405ef2820b9bbd37df0e8775decbcc7b0ea1
- *    |                                                 ^
- *    '
- *   scss\_reset.scss 15:49  @import
- *   scss\base.scss 3:8      root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a    \2577 \a 15 \2502  >>>>>>> 5669405ef2820b9bbd37df0e8775decbcc7b0ea1\a    \2502                                                  ^\a    \2575 \a   scss\\_reset.scss 15:49  @import\a   scss\\base.scss 3:8      root stylesheet';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
+
+h1 {
+  color: #ebbe2c;
+  font-size: 2rem;
+}
+
+h2 {
+  color: #ecc02f;
+  font-size: 1.8rem;
+}
+
+h3 {
+  color: #ffdb65;
+  font-size: 1.6rem;
+}
+
+p {
+  color: white;
+  font-size: 1.3rem;
+}
+
+body {
+  background-color: #0D0D0E;
+  font-style: 1rem;
+  font-family: "Signika", sans-serif;
+  color: beige;
+}
+
+/*Scss header de las 5 paginas*/
+.header {
+  height: 100vh;
+  background: linear-gradient(to right, rgb(0, 0, 0), #161618);
+}
+.header .contenedorLogo {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .contenedorLogo .logo {
+  width: 200px;
+  object-fit: cover;
+  display: inline-block;
+  padding-left: 1rem;
+}
+.header .boton {
+  background-color: rgba(250, 208, 92, 0.7137254902);
+}
+.header a.active, .header a:hover {
+  background: #E1BA39;
+  transition: 0.5s;
+  border-radius: 17px;
+}
+.header .contenedorIndex {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6117647059), rgba(0, 0, 0, 0.6117647059)), url("../assets/img/cabnavmenu.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 85%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header .contenedorIndex .hijoIndex {
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+.header .contenedorIndex .hijoIndex .textoIndex {
+  font-family: "Signika", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  text-align: center;
+}
+.header .contenedorIndex .hijoIndex .textoIndex .animate__animated.animate__bounce {
+  --animate-duration: 2s;
+}
+.header .contenedorIndex .hijoIndex .textoIndex .animate__animated.animate__bounce :root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
+.header .contenedorBeneficios {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6117647059), rgba(0, 0, 0, 0.6117647059)), url("../assets/img/canavbeneficios.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 85%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header .contenedorBeneficios .hijoBeneficios {
+  padding-right: 13rem;
+  padding-left: 5rem;
+}
+.header .contenedorBeneficios .hijoBeneficios .textoBeneficios {
+  font-family: "Signika", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+}
+.header .contenedorBeneficios .hijoBeneficios .textoBeneficios .animate__animated.animate__bounce {
+  --animate-duration: 2s;
+}
+.header .contenedorBeneficios .hijoBeneficios .textoBeneficios .animate__animated.animate__bounce :root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
+.header .contenedorCarta {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6117647059), rgba(0, 0, 0, 0.6117647059)), url("../assets/img/cabnavcarta.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 85%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header .contenedorCarta .hijoCarta {
+  padding-right: 6rem;
+  padding-left: 5rem;
+}
+.header .contenedorCarta .hijoCarta .textoCarta {
+  font-family: "Signika", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  text-align: center;
+}
+.header .contenedorCarta .hijoCarta .textoCarta .animate__animated.animate__bounce {
+  --animate-duration: 2s;
+}
+.header .contenedorCarta .hijoCarta .textoCarta .animate__animated.animate__bounce :root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
+.header .contenedorCena {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6117647059), rgba(0, 0, 0, 0.6117647059)), url("../assets/img/cabnavCena.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 85%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header .contenedorCena .hijoCena {
+  padding-right: 20rem;
+  padding-left: 5rem;
+}
+.header .contenedorCena .hijoCena .textoCena {
+  font-family: "Signika", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  text-align: center;
+}
+.header .contenedorContacto {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6117647059), rgba(0, 0, 0, 0.6117647059)), url("../assets/img/pexels-photo-10295770.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header .contenedorContacto .hijoContacto {
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+.header .contenedorContacto .hijoContacto .textoContacto {
+  font-family: "Signika", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  text-align: center;
+}
+.header .contenedorContacto .hijoContacto .textoContacto .animate__animated.animate__bounce {
+  --animate-duration: 2s;
+}
+.header .contenedorContacto .hijoContacto .textoContacto .animate__animated.animate__bounce :root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
+
+/*media queries header */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .header .contenedorIndex .hijoIndex {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .header .contenedorIndex .hijoIndex .textoIndex {
+    font-size: 25px;
+  }
+  .header .contenedorBeneficios .hijoBeneficios {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .header .contenedorBeneficios .hijoBeneficios .textoBeneficios {
+    font-size: 25px;
+  }
+  .contenedorCarta .hijoCarta {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .contenedorCarta .hijoCarta .textoCarta {
+    font-size: 25px;
+  }
+  .contenedorCarta .contenedorCena .hijoCena {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .contenedorCarta .contenedorCena .hijoCena .textoCena {
+    font-size: 25px;
+  }
+  .contenedorCarta .contenedorContacto .hijoContacto {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .contenedorCarta .contenedorContacto .hijoContacto .textoContacto {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .header .contenedorIndex .hijoIndex {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .header .contenedorIndex .hijoIndex .textoIndex {
+    font-size: 23px;
+  }
+  .header .contenedorBeneficios .hijoBeneficios {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .header .contenedorBeneficios .hijoBeneficios .textoBeneficios {
+    font-size: 23px;
+  }
+  .header .contenedorCarta .hijoCarta {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .header .contenedorCarta .hijoCarta .textoCarta {
+    font-size: 23px;
+  }
+  .header .contenedorCena .hijoCena {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .header .contenedorCena .hijoCena .textoCena {
+    font-size: 23px;
+  }
+  .header .contenedorContacto .hijoContacto {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .header .contenedorContacto .hijoContacto .textoContacto {
+    font-size: 23px;
+  }
+}
+@media screen and (min-width: 414px) and (max-width: 576px) {
+  .header .contenedorIndex .hijoIndex {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  .header .contenedorIndex .hijoIndex .textoIndex {
+    font-size: 21px;
+  }
+  .header .contenedorBeneficios .hijoBeneficios {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .header .contenedorBeneficios .hijoBeneficios .textoBeneficios {
+    font-size: 21px;
+  }
+  .header .contenedorCarta .hijoCarta {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .header .contenedorCarta .hijoCarta .textoCarta {
+    font-size: 21px;
+  }
+  .header .contenedorCena .hijoCena {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .header .contenedorCena .hijoCena .textoCena {
+    font-size: 21px;
+  }
+  .header .contenedorContacto .hijoContacto {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .header .contenedorContacto .hijoContacto .textoContacto {
+    font-size: 21px;
+  }
+}
+@media screen and (min-width: 361px) and (max-width: 414px) {
+  .header .contenedorIndex .hijoIndex {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .header .contenedorIndex .hijoIndex .textoIndex {
+    font-size: 19px;
+  }
+  .header .contenedorBeneficios .hijoBeneficios {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .header .contenedorBeneficios .hijoBeneficios .textoBeneficios {
+    font-size: 19px;
+  }
+  .header .contenedorCarta .hijoCarta {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .header .contenedorCarta .hijoCarta .textoCarta {
+    font-size: 19px;
+  }
+  .header .contenedorCena .hijoCena {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .header .contenedorCena .hijoCena .textoCena {
+    font-size: 19px;
+  }
+  .header .contenedorContacto .hijoContacto {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .header .contenedorContacto .hijoContacto .textoContacto {
+    font-size: 19px;
+  }
+}
+@media screen and (min-width: 150px) and (max-width: 361px) {
+  .header .contenedorIndex .hijoIndex {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  .header .contenedorIndex .hijoIndex .textoIndex {
+    font-size: 16px;
+  }
+  .header .contenedorBeneficios .hijoBeneficios {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .header .contenedorBeneficios .hijoBeneficios .textoBeneficios {
+    font-size: 16px;
+  }
+  .header .contenedorCarta .hijoCarta {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .header .contenedorCarta .hijoCarta .textoCarta {
+    font-size: 16px;
+  }
+  .header .contenedorCena .hijoCena {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .header .contenedorCena .hijoCena .textoCena {
+    font-size: 16px;
+  }
+  .header .contenedorContacto .hijoContacto {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .header .contenedorContacto .hijoContacto .textoContacto {
+    font-size: 16px;
+  }
+}
+/*scss main index*/
+.beneficios {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.beneficios .box1 {
+  display: flex;
+  justify-content: column;
+  align-items: center;
+  flex-direction: center;
+  background-color: #0D0D0E;
+  font-size: 1rem;
+}
+.beneficios .box1 h1 {
+  font-family: "Signika", sans-serif;
+  color: #E1BA39;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 0; /* Agregamos margin-top: 0; para eliminar el margen superior */
+}
+.beneficios .box1 p {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  margin-bottom: 1rem;
+  font-weight: 80;
+  font-size: inherit;
+  line-height: 1.5;
+  text-align: center;
+}
+.beneficios .fondo {
+  background-image: url(../assets/img/imgindex.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 90vh;
+}
+
+/*scss main de pag beneficios*/
+.beneficios {
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
+.beneficios .card {
+  background-color: #060607;
+}
+
+/*scss main de pag Carta*/
+.box1Carta {
+  background-color: #0D0D0E;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fondo1, .beneficios .fondo5, .fondo4, .fondo3, .fondo2 {
+  background-image: url(../assets/img/plato1menu.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 90vh;
+}
+
+.fondo2 {
+  background-image: url(../assets/img/plato2a.webp);
+}
+
+.fondo3 {
+  background-image: url(../assets/img/plato3menu.webp);
+}
+
+.fondo4 {
+  background-image: url(../assets/img/plato4menu.jpeg);
+}
+
+/*scss main pag cena*/
+.beneficios {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.beneficios .box1Carta {
+  background-color: #0D0D0E;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.beneficios .fondo5 {
+  background-image: url(../assets/img/soba\ cena.jpg);
+}
+
+/*scss main pag contacto*/
+.beneficios {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.beneficios .boxContacto {
+  background-color: #0D0D0E;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.beneficios .boxContacto h1 {
+  font-family: "Signika", sans-serif;
+  color: #E1BA39;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 20px;
+}
+.beneficios .boxContacto h1 h2 {
+  font-family: "Signika", sans-serif;
+  color: #E1BA39;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.beneficios .boxContacto h1 h2 p {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  margin-bottom: 1rem;
+  font-weight: 80;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+}
+.beneficios .tituloFormulario {
+  margin-top: 1.5rem;
+  text-align: center;
+  color: #E1BA39;
+}
+.beneficios .row .formularioBox {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.beneficios .row .formularioBox form {
+  position: relative;
+  display: inline-block;
+  padding: 5px 15px;
+  color: #fad05c;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 5s;
+  margin-top: 0.5px;
+  margin-bottom: 2rem;
+  letter-spacing: 4px;
+}
+.beneficios .row .formularioBox .userBox input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 5px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.beneficios .row .formularioBox textarea {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.beneficios .row .formularioBox .userBox label {
+  position: absolute;
+  top: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 5s;
+}
+
+/*Media queries de mainContactos*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  main .boxContacto h1 {
+    font-family: "Signika", sans-serif;
+    color: #E1BA39;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 15px;
+  }
+  main .boxContacto h1 h2 {
+    font-family: "Signika", sans-serif;
+    color: #E1BA39;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  main .boxContacto h1 h2 p {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    margin-bottom: 1rem;
+    font-weight: 80;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+  main .row .formularioBox form {
+    max-width: 80%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  main .boxContacto h1 {
+    font-family: "Signika", sans-serif;
+    color: #E1BA39;
+    font-size: 1.8rem;
+    text-align: center;
+    padding-top: 15px;
+  }
+  main .boxContacto h1 h2 {
+    font-family: "Signika", sans-serif;
+    color: #E1BA39;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  main .boxContacto h1 h2 p {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    margin-bottom: 1rem;
+    font-weight: 80;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+  main .row .formularioBox form {
+    max-width: 60%;
+  }
+}
+@media screen and (min-width: 361px) and (max-width: 414px) {
+  main .boxContacto h1 {
+    font-family: "Signika", sans-serif;
+    color: #E1BA39;
+    font-size: 1.5px;
+    text-align: center;
+    padding-top: 15px;
+  }
+  main .boxContacto h1 h2 {
+    font-family: "Signika", sans-serif;
+    color: #E1BA39;
+    font-size: 1rem;
+    text-align: center;
+  }
+  main .boxContacto h1 h2 p {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    margin-bottom: 1rem;
+    font-weight: 80;
+    font-size: 0.5rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+  main .row .formularioBox {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  main .row .formularioBox form {
+    max-width: 45%;
+  }
+}
+/*Inicio scss del Footer*/
+footer {
+  background-color: #020202;
+}
+footer .contenedorFoother {
+  background-color: #060607;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  font-size: 1.5rem;
+  justify-content: center;
+}
+footer .contenedorFoother .box2Foother {
+  background-color: #060607;
+  border: 1px solid black;
+  width: 26.1rem;
+  overflow: auto;
+  margin: 1rem;
+  text-align: center;
+}
+footer .contenedorFoother .box2Foother h2 {
+  font-family: "Signika", sans-serif;
+  color: #ebbe2c;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-bottom: 1.4rem;
+  padding-top: 1.4rem;
+}
+footer .contenedorFoother .box2Foother .parrafoFotter {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  margin-bottom: 1rem;
+  font-weight: 80;
+  font-size: inherit;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 1rem;
+}
+footer .contenedorFoother .box2Foother h3 {
+  font-family: "Signika", sans-serif;
+  color: #ebbe2c;
+  font-size: 1rem;
+  text-align: center;
+  padding-bottom: 2.5rem;
+  padding-top: 3.7rem;
+}
+footer .contenedorFoother .box2Foother2 {
+  background-color: #060607;
+  border: 1px solid black;
+  width: 26.1rem;
+  overflow: auto;
+  margin: 1rem;
+  text-align: center;
+}
+footer .contenedorFoother .box2Foother2 h2 {
+  font-family: #060607;
+  color: #ebbe2c;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  padding-top: 1.7rem;
+}
+footer .contenedorFoother .box2Foother2 .parrafoFotter2 {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  margin-bottom: 0.5rem;
+  font-weight: 70;
+  font-size: inherit;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+footer .contenedorFoother .box2Foother2 .h3Foteer {
+  font-family: "Signika", sans-serif;
+  color: #ebbe2c;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 1.6rem;
+  margin-bottom: 3.2rem;
+}
+footer .contenedorFoother .box2Foother3 {
+  display: flex;
+  background-color: #060607;
+  border: 1px solid black;
+  width: 26.1rem;
+  overflow: auto;
+  margin: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+footer .contenedorFoother .icons {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 0.2rem;
+  align-items: center;
+}
+footer .contenedorFoother .icons i {
+  color: #ebbe2c;
+  font-size: 1.8rem;
+  margin: 0 0.5rem;
+}
+footer .derechos {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.1rem;
+}
+footer .derechos .contenedor-derechos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+footer .derechos .contenedor-derechos .parrafoDerechos {
+  font-size: 1rem;
+}
+
+/*media queries del footer*/
+@media only screen and (max-width: 1320px) {
+  footer .contenedorFoother {
+    padding-top: 2rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  footer .contenedorFoother {
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  footer .contenedorFoother {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
