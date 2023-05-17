@@ -26,116 +26,6 @@ p {
   font-size: 1.3rem;
 }
 
-.error {
-  background-image: linear-gradient(to right top, #ffd166, #fecf60, #fdcc59, #fcca53, #fbc74c, #fac345, #f9bf3e, #f8bb37, #f6b52e, #f5ae24, #f3a819, #f2a10b);
-  height: 100vh;
-  background-size: 400%;
-  font-family: "Poppins", sans-serif;
-}
-.error .error-page {
-  position: absolute;
-  top: 10%;
-  left: 17%;
-  right: 17%;
-  bottom: 10%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(0, 0, 0, 0.9647058824);
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-.error .error-page .content {
-  max-width: 600px;
-  text-align: center;
-}
-.error .error-page .content h1 {
-  font-size: 18vw;
-  line-height: 1em;
-  position: relative;
-}
-.error .error-page .content h1::after {
-  position: absolute;
-  content: attr(data-text);
-  top: 0;
-  left: 0;
-  right: 0;
-  background-image: linear-gradient(to right top, #fcca53, #fbc74c, #f0bc44, #e4b03c, #d9a534, #c18f29, #a97a1e, #916613, #7a5208);
-  background-size: 400%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25);
-  animation: animate 10s ease-in-out infinite;
-}
-@keyframes animate {
-  0% {
-    background-position: 0 0;
-  }
-  25% {
-    background-position: 100% 0;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-  75% {
-    background-position: 0 100%;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-.error .error-page .content h2 {
-  text-transform: uppercase;
-  color: #fac343;
-  max-width: 600px;
-  font-size: 2em;
-  position: relative;
-  padding-bottom: 15px;
-}
-.error .error-page .content h2::after {
-  position: absolute;
-  content: attr(data-text);
-  top: 0;
-  left: 0;
-  right: 0;
-  background: -webkit-repeating-linear-gradient(-45deg, #ffe5a8, #fac343, #f3af30, #5D5D53, #353b3c);
-  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.4);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25);
-  animation: animate 10s ease-in-out infinite;
-}
-.error .error-page .content p {
-  font-size: 1.2em;
-  color: #4e4e4e;
-  padding-bottom: 20px;
-}
-.error .error-page .content .btns {
-  margin: 25 px 0;
-  display: inline-flex;
-}
-.error .error-page .content .btns a {
-  display: inline-block;
-  margin: 0 10px;
-  text-decoration: none;
-  border: 2px solid #f3af30;
-  color: #f3af30;
-  font-weight: 500;
-  padding: 10px 25px;
-  border-radius: 25px;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
-}
-.error .error-page .content .btns a:hover {
-  color: white;
-  background: #f3af30;
-}
-
 body {
   background-color: #0D0D0E;
   font-style: 1rem;
@@ -146,58 +36,28 @@ body {
 /*Scss header de las 5 paginas*/
 .header {
   height: 100vh;
-  background: black;
+  background: linear-gradient(to right, rgb(0, 0, 0), #161618);
 }
 .header .contenedorLogo {
   width: 20%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  text-decoration: none;
 }
 .header .contenedorLogo .logo {
   width: 200px;
   object-fit: cover;
   display: inline-block;
-  padding-left: 0.8rem;
+  padding-left: 1rem;
 }
 .header .boton {
   background-color: rgba(250, 208, 92, 0.7137254902);
 }
-.header .boton.active, .header .boton:hover {
+.header a.active, .header a:hover {
   color: #E1BA39;
 }
-.header .list {
-  list-style: none;
-}
-.header .list .links {
-  display: inline-block;
-  margin-block: 2px;
-  text-decoration: none;
-  color: #fff;
-  position: relative;
-  margin-top: 10px;
-  font-size: 1rem;
-  padding: 0 22px;
-}
-.header .list .links::after {
-  content: "";
-  width: 100%;
-  height: 1px;
-  background-color: #E1BA39;
-  border-radius: 4px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.25s ease;
-}
-.header .list .links:hover::after {
-  transform: scaleX(1);
-}
 .header .contenedorIndex {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1294117647), rgba(0, 0, 0, 0.8352941176)), url("../assets/img/cabnavmenu.jpg");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6117647059), rgba(0, 0, 0, 0.6117647059)), url("../assets/img/cabnavmenu.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -210,9 +70,6 @@ body {
 .header .contenedorIndex .hijoIndex {
   padding-right: 5rem;
   padding-left: 5rem;
-}
-.header .contenedorIndex .hijoIndex h1 {
-  text-align: center;
 }
 .header .contenedorIndex .hijoIndex .textoIndex {
   font-family: "Signika", sans-serif;
@@ -230,7 +87,7 @@ body {
   --animate-delay: 0.9s;
 }
 .header .contenedorBeneficios {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1294117647), rgba(0, 0, 0, 0.8352941176)), url("../assets/img/canavbeneficios.jpg");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6117647059), rgba(0, 0, 0, 0.6117647059)), url("../assets/img/canavbeneficios.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -243,9 +100,6 @@ body {
 .header .contenedorBeneficios .hijoBeneficios {
   padding-right: 13rem;
   padding-left: 5rem;
-}
-.header .contenedorBeneficios .hijoBeneficios h1 {
-  text-align: center;
 }
 .header .contenedorBeneficios .hijoBeneficios .textoBeneficios {
   font-family: "Signika", sans-serif;
@@ -265,7 +119,7 @@ body {
   --animate-delay: 0.9s;
 }
 .header .contenedorCarta {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1294117647), rgba(0, 0, 0, 0.8352941176)), url("../assets/img/cabnavcarta.jpg");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6117647059), rgba(0, 0, 0, 0.6117647059)), url("../assets/img/cabnavcarta.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -278,9 +132,6 @@ body {
 .header .contenedorCarta .hijoCarta {
   padding-right: 6rem;
   padding-left: 5rem;
-}
-.header .contenedorCarta .hijoCarta h1 {
-  text-align: center;
 }
 .header .contenedorCarta .hijoCarta .textoCarta {
   font-family: "Signika", sans-serif;
@@ -298,7 +149,7 @@ body {
   --animate-delay: 0.9s;
 }
 .header .contenedorCena {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1294117647), rgba(0, 0, 0, 0.8352941176)), url("../assets/img/cabnavCena.jpg");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6117647059), rgba(0, 0, 0, 0.6117647059)), url("../assets/img/cabnavCena.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -312,9 +163,6 @@ body {
   padding-right: 20rem;
   padding-left: 5rem;
 }
-.header .contenedorCena .hijoCena h1 {
-  text-align: center;
-}
 .header .contenedorCena .hijoCena .textoCena {
   font-family: "Signika", sans-serif;
   display: flex;
@@ -324,7 +172,7 @@ body {
   text-align: center;
 }
 .header .contenedorContacto {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1294117647), rgba(0, 0, 0, 0.8352941176)), url("../assets/img/pexels-photo-10295770.webp");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6117647059), rgba(0, 0, 0, 0.6117647059)), url("../assets/img/pexels-photo-10295770.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -337,9 +185,6 @@ body {
 .header .contenedorContacto .hijoContacto {
   padding-right: 5rem;
   padding-left: 5rem;
-}
-.header .contenedorContacto .hijoContacto h1 {
-  text-align: center;
 }
 .header .contenedorContacto .hijoContacto .textoContacto {
   font-family: "Signika", sans-serif;
@@ -567,16 +412,10 @@ body {
   font-family: "Poppins", sans-serif;
   color: white;
   margin-bottom: 1rem;
-  margin-top: 2.5rem;
   font-weight: 80;
-  font-size: 18px;
+  font-size: inherit;
   line-height: 2;
-  text-align: justify;
-  padding: 8px;
-}
-.beneficios .box1 p .resaltado {
-  color: #f8c051;
-  font-weight: bold;
+  text-align: center;
 }
 .beneficios .fondo {
   background-image: url(../assets/img/imgindex.jpg);
@@ -584,35 +423,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   height: 90vh;
-  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-}
-@-webkit-keyframes scale-up-center {
-  0% {
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5);
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-@keyframes scale-up-center {
-  0% {
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5);
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-.beneficios .carousel-item {
-  width: 100%;
-  height: 80vh;
-}
-.beneficios .carousel-item .carusel {
-  object-fit: cover;
 }
 
 /*scss main de pag beneficios*/
@@ -622,18 +432,6 @@ body {
 }
 .beneficios .card {
   background-color: #060607;
-  height: 20rem;
-  overflow: hidden;
-  width: 100%;
-  padding-bottom: 130px;
-}
-.beneficios .card .cardImg {
-  height: 100%;
-  object-fit: cover;
-  width: 100%;
-}
-.beneficios .card .cardImg:hover {
-  transform: scale(1.2);
 }
 
 /*scss main de pag Carta*/
@@ -644,7 +442,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: justify;
 }
 
 .fondo1, .beneficios .fondo5, .fondo4, .fondo3, .fondo2 {
@@ -653,36 +450,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   height: 90vh;
-  -webkit-animation: scale-up-right 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: scale-up-right 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-}
-@-webkit-keyframes scale-up-right {
-  0% {
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5);
-    -webkit-transform-origin: 100% 50%;
-    transform-origin: 100% 50%;
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transform-origin: 100% 50%;
-    transform-origin: 100% 50%;
-  }
-}
-@keyframes scale-up-right {
-  0% {
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5);
-    -webkit-transform-origin: 100% 50%;
-    transform-origin: 100% 50%;
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transform-origin: 100% 50%;
-    transform-origin: 100% 50%;
-  }
 }
 
 .fondo2 {
@@ -709,47 +476,15 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: justify;
 }
 .beneficios .fondo5 {
   background-image: url(../assets/img/soba\ cena.jpg);
-  -webkit-animation: scale-up-right 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: scale-up-right 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-}
-@-webkit-keyframes scale-up-right {
-  0% {
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5);
-    -webkit-transform-origin: 100% 50%;
-    transform-origin: 100% 50%;
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transform-origin: 100% 50%;
-    transform-origin: 100% 50%;
-  }
-}
-@keyframes scale-up-right {
-  0% {
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5);
-    -webkit-transform-origin: 100% 50%;
-    transform-origin: 100% 50%;
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transform-origin: 100% 50%;
-    transform-origin: 100% 50%;
-  }
 }
 
 /*scss main pag contacto*/
 .beneficios {
   margin-bottom: 1rem;
   margin-top: 1rem;
-  /*Media queries de mainContactos*/
 }
 .beneficios .boxContacto {
   background-color: #0D0D0E;
@@ -837,60 +572,23 @@ body {
   pointer-events: none;
   transition: 5s;
 }
-.beneficios .row .formularioBox .animated-button {
-  display: inline-block;
-  padding: 12px 24px;
-  font-size: 13px;
-  font-weight: bold;
-  color: #fff;
-  background-color: #E1BA39;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-}
-.beneficios .row .formularioBox .animated-button:before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 0;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.3);
-  opacity: 0;
-  transition: width 0.3s, opacity 0.3s;
-}
-.beneficios .row .formularioBox .animated-button:hover:before {
-  width: 100%;
-  opacity: 1;
-}
-.beneficios .row .formularioBox .animated-button:hover:before:hover {
-  background-color: #E1BA39;
-}
-.beneficios .row .carousel-item {
-  width: 100%;
-  height: 80vh;
-}
-.beneficios .row .carousel-item .carusel {
-  object-fit: cover;
-}
+
+/*Media queries de mainContactos*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .beneficios main .boxContacto h1 {
+  main .boxContacto h1 {
     font-family: "Signika", sans-serif;
     color: #E1BA39;
     font-size: 2rem;
     text-align: center;
     padding-top: 15px;
   }
-  .beneficios main .boxContacto h1 h2 {
+  main .boxContacto h1 h2 {
     font-family: "Signika", sans-serif;
     color: #E1BA39;
     font-size: 1.5rem;
     text-align: center;
   }
-  .beneficios main .boxContacto h1 h2 p {
+  main .boxContacto h1 h2 p {
     font-family: "Roboto", sans-serif;
     color: white;
     margin-bottom: 1rem;
@@ -899,25 +597,25 @@ body {
     line-height: 1.5;
     text-align: center;
   }
-  .beneficios main .row .formularioBox form {
+  main .row .formularioBox form {
     max-width: 80%;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 768px) {
-  .beneficios main .boxContacto h1 {
+  main .boxContacto h1 {
     font-family: "Signika", sans-serif;
     color: #E1BA39;
     font-size: 1.8rem;
     text-align: center;
     padding-top: 15px;
   }
-  .beneficios main .boxContacto h1 h2 {
+  main .boxContacto h1 h2 {
     font-family: "Signika", sans-serif;
     color: #E1BA39;
     font-size: 1.3rem;
     text-align: center;
   }
-  .beneficios main .boxContacto h1 h2 p {
+  main .boxContacto h1 h2 p {
     font-family: "Roboto", sans-serif;
     color: white;
     margin-bottom: 1rem;
@@ -926,25 +624,25 @@ body {
     line-height: 1.5;
     text-align: center;
   }
-  .beneficios main .row .formularioBox form {
+  main .row .formularioBox form {
     max-width: 60%;
   }
 }
 @media screen and (min-width: 361px) and (max-width: 414px) {
-  .beneficios main .boxContacto h1 {
+  main .boxContacto h1 {
     font-family: "Signika", sans-serif;
     color: #E1BA39;
     font-size: 1.5px;
     text-align: center;
     padding-top: 15px;
   }
-  .beneficios main .boxContacto h1 h2 {
+  main .boxContacto h1 h2 {
     font-family: "Signika", sans-serif;
     color: #E1BA39;
     font-size: 1rem;
     text-align: center;
   }
-  .beneficios main .boxContacto h1 h2 p {
+  main .boxContacto h1 h2 p {
     font-family: "Roboto", sans-serif;
     color: white;
     margin-bottom: 1rem;
@@ -953,16 +651,15 @@ body {
     line-height: 1.5;
     text-align: center;
   }
-  .beneficios main .row .formularioBox {
+  main .row .formularioBox {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
   }
-  .beneficios main .row .formularioBox form {
+  main .row .formularioBox form {
     max-width: 45%;
   }
 }
-
 /*Inicio scss del Footer*/
 footer {
   background-color: #020202;
@@ -1110,4 +807,4 @@ footer .derechos .contenedor-derechos .parrafoDerechos {
   }
 }
 
-/*# sourceMappingURL=estilos.css.map */
+/*# sourceMappingURL=base.css.map */

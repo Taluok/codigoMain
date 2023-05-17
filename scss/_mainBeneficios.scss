@@ -4,5 +4,17 @@
     margin-top: 3rem;
     .card {
         background-color: $colorTerciario;
+        height: 20rem;
+        overflow: hidden;
+        width: 100%;
+        padding-bottom: 130px;
+        .cardImg{
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
     }
 }

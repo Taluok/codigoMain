@@ -5,8 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["ramen, Japon, Comida Japonesa, cultura japonesa, korokawa, restaurante"],
+  "author": "Ludueña Tania",
   "license": "ISC",
-  "description": ""
+  "description": "Descubre la deliciosa cocina japonesa en nuestro restaurante. Ven y disfruta de la armonía de sabores ¡Te esperamos con los brazos abiertos!"
 }
