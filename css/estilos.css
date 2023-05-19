@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -136,6 +137,44 @@ p {
   background: #f3af30;
 }
 
+/* Estilos para dispositivos con un ancho máximo de 768px */
+@media (max-width: 768px) {
+  .error-page {
+    top: 5%;
+    left: 10%;
+    right: 10%;
+    bottom: 5%;
+  }
+}
+/* Estilos para dispositivos con un ancho máximo de 576px */
+@media (max-width: 576px) {
+  .error-page {
+    top: 2%;
+    left: 5%;
+    right: 5%;
+    bottom: 2%;
+  }
+  .error-page .content {
+    max-width: 90%;
+  }
+  .error-page h1 {
+    font-size: 12vw;
+  }
+  .error-page h2 {
+    font-size: 1.5em;
+  }
+  .error-page p {
+    font-size: 1em;
+  }
+  .error-page .btns {
+    flex-direction: column;
+    margin: 15px 0;
+  }
+  .error-page .btns a {
+    margin: 5px 0;
+    padding: 8px 20px;
+  }
+}
 body {
   background-color: #0D0D0E;
   font-style: 1rem;
@@ -610,11 +649,24 @@ body {
 .beneficios .carousel-item {
   width: 100%;
   height: 80vh;
-}
-.beneficios .carousel-item .carusel {
   object-fit: cover;
 }
+.beneficios .carousel-item img {
+  max-width: 100%;
+  height: auto;
+}
 
+/*media queries del caurusell*/
+@media screen and (max-width: 767px) {
+  .carousel-item {
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 576px) {
+  .carousel-item {
+    height: 40vh;
+  }
+}
 /*scss main de pag beneficios*/
 .beneficios {
   margin-bottom: 2rem;
